@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoxBridge AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="badge">Open Source AI Communication Bridge</div>
+      <h1>VoxBridge AI</h1>
+      <p>
+        Real-time multilingual voice communication for calls, meetings,
+        teams, and future AI conference devices.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="language-row">
+        <label>
+          From
+          <select id="sourceLanguage">
+            <option>Arabic</option>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>French</option>
+            <option>German</option>
+            <option>Turkish</option>
+          </select>
+        </label>
+
+        <label>
+          To
+          <select id="targetLanguage">
+            <option>English</option>
+            <option>Arabic</option>
+            <option>Spanish</option>
+            <option>French</option>
+            <option>German</option>
+            <option>Turkish</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop & Translate</button>
+      </div>
+
+      <p id="status">Ready. Allow microphone permission when asked.</p>
+    </section>
+
+    <section class="results">
+      <div class="card">
+        <h2>Original Speech</h2>
+        <p id="originalText">Your spoken text will appear here.</p>
+      </div>
+
+      <div class="card highlight">
+        <h2>Translated Result</h2>
+        <p id="translatedText">The live translation will appear here.</p>
+      </div>
+    </section>
+
+    <section class="roadmap">
+      <h2>Future Roadmap</h2>
+      <ul>
+        <li>Live meeting translation</li>
+        <li>AI conference translation devices</li>
+        <li>Voice-preserving emotional translation</li>
+        <li>Multi-person multilingual rooms</li>
+        <li>WebRTC real-time calls</li>
+        <li>Mobile app and hardware integration</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
